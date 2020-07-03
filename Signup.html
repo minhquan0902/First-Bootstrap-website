@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset=utf-8>
+    <title>Sign Up Form</title>
+    <script src="signup.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <style>
+
+        /* Some of the CSS tags are provided you need to add more to get the desired effect of the final output */
+
+        body {font-family: gill sans;}
+
+        .container {
+            width: 600px;
+            height: 800px;
+            padding: 10px;
+            border: 5px solid blue;
+            background-color: lightblue;
+            margin:0 auto;
+        }
+
+
+        .btn-submit {background-color: blue; color: white; font-size: 15px; font-weight: bold;}
+        .btn-reset  {background-color: blue; color: white; font-size: 15px; font-weight: bold;}
+
+        h4 {color: red;}
+        h1 {text-align: center;}
+
+        fieldset {
+            display: block;
+            margin-left: 2px;
+            margin-right: 2px;
+            padding-top: 0.35em;
+            padding-bottom: 0.625em;
+            padding-left: 0.75em;
+            padding-right: 0.75em;
+            border: 8px groove (internal value); }
+
+
+    </style>
+</head>
+
+<!-- Please insert the relevant HTML code as indicated by the comments. Do not change the order -->
+
+<body>
+
+<!-- insert the HTML tags to create the container box below -->
+<div class="container">
+
+
+    <h1 style="font-weight: bold; font-style: inherit; font-size: 40px;">THE AUSTRALIAN BAKERY SIGN UP FORM!</h1>
+    <h4>* denotes mandotory field</h4>
+    <form name="myForm" action="action_file.php" onsubmit="return validateForm()" method="post">
+
+        Name: <input type="text" name="name">
+        Email: <input type="text" name="email">
+        <input type="submit" value="Submit">
+
+
+
+        <!-- insert the HTML tags for fieldset block for fullname, email and date of birth below -->
+        <fieldset>
+            <legend><b>Personal Details:</b></legend>
+            Full name*: <input type="text" name="Full name" value=""><br>
+            Email*:     <input type="email" name="Email" value=""> <br>
+            Date of birth: <input type="date" name="DOB" value="">
+
+        </fieldset>
+
+
+
+
+
+
+
+
+
+        What interested you most?<br>
+        Cakes <input type="checkbox" name="species" value="Cakes"><br>
+        Coffees<input type="checkbox" name="species" value="Coffees"><br>
+        Muffins <input type="checkbox" name="species" value="Muffins"><br>
+        Milktea <input type="checkbox" name="species" value="Milktea"><br>
+
+
+
+
+
+
+
+
+
+
+        <p>Would you recommend our Bakery to your friend <3?
+
+            <input type="radio" name="lists" value="agreed" id="yes"/>
+            <label for="Yes">Sure, why not?</label>
+            <input type="radio" name="lists" value="disagreed" id="No" />
+            <label for="No"> Maybe not</label>
+        </p>
+
+
+
+
+
+
+        <p>Give us some of your opinion about our bakery! </p>
+        <textarea name="message" rows="5" cols="45">Please type here....</textarea><br><br>
+
+
+
+
+        <button class="btn-submit">Submit Reservation</button></a>
+
+
+
+
+
+
+    </form>
+    <a href="index.html"> <button class="btn-reset"> Navigate back to home</button></a>
+
+</body>
+</html>
